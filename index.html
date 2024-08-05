@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Include your custom style.css if needed -->
+    <title>Hotel - Rooms</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="#">Hotel.com</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="rooms.php">Rooms</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="services.php">Services</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.php">Contact Us</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="img/instagram.png" alt=""></a>
+                    <a href="#"><img src="img/facebook.png" alt=""></a>
+                    <a href="#"><img src="img/whatsapp.png" alt=""></a>
+                </div>      
+        </nav>
+    </header>
+
+    <main>
+        <section>
+       <div class="container mt-5">
+           <div class="row">
+               <div class="col-md-6" style="padding-bottom: 15px;">
+                   <h2>Welcome to Hotel.com</h2>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolore enim nisi mollitia! Quod itaque iure repudiandae dolores a eius laudantium ab fugiat, temporibus nulla doloremque sed impedit dolor eveniet perferendis est officia pariatur minima nostrum, similique corrupti facere illum. Veniam, dicta dolores. Porro, maiores? Deserunt, expedita consectetur? Facilis id vero expedita ipsam temporibus quidem, fugiat pariatur blanditiis sint quasi eos beatae atque adipisci asperiores error quia inventore ut incidunt assumenda perferendis illo nihil? Saepe totam possimus, repudiandae praesentium amet aliquid voluptatem harum consequatur ipsum voluptatibus perferendis laudantium libero nemo iste dignissimos iure cumque aliquam et? Enim dolore nesciunt nulla?</p>
+                   <a href="rooms.php" class="btn btn-dark">Rooms</a>
+               </div>
+               <div class="col-md-6">
+                   <img src="img/homepage.jpg" class="img-fluid" alt="homepage">
+               </div>
+           </div>
+       </div>
+   </section>
+    <!-- Room Options Section -->
+    <section class="room-options">
+        <div class="row">
+            <div class="room-option"  onclick="showRooms('standard', 'medium-budget')">
+                <img src="img/economy.jpeg" alt="Economy room">
+                <h3>Economy</h3>
+                <p>Low Budget</p>
+                 <a href="rooms.php#economy" class="btn btn-primary btn-purple">Economy</a>
+            </div>
+            <div class="room-option" onclick="showRooms('standard', 'medium-budget')">
+                <img src="img/standard.jpg" alt="Standard room">
+            <h3>Standard</h3>
+            <p>Medium Budget</p>
+                <a href="rooms.php#standard" class="btn btn-primary btn-purple">Standard</a>
+            </div>
+            <div class="room-option" onclick="showRooms('luxury', 'high-budget')">
+                <img src="img/luxury.jpg" alt="Luxury room">
+                <h3>Luxury</h3>
+                 <p>High Budget</p>
+                <a href="rooms.php#luxury" class="btn btn-primary btn-purple">Luxury</a>
+            </div>
+        </div>
+    </section> 
+
+     <!-- Gallery Section -->
+     <section class="gallery-section">
+        <div class="container">
+            <h2>Photo Gallery</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="img/photo1.jpg" alt="Photo 1">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="img/photo2.png" alt="Photo 2">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="img/photo3.jpg" alt="Photo 3">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="img/economy2.jpg" alt="Photo 4">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="img/luxury1.jpg" alt="Photo 5">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="img/photo6.jpg" alt="Photo 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    </main>
+
+    <footer class="mt-5 text-center">
+        <h4>Contact Information</h4>
+        <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+        <p><strong>Phone:</strong> +123 456 7890</p>
+        <p><strong>Email:</strong> info@hotel.com</p>
+        <p><b>All rights reserved. Hotel.com 2023</b></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+</html>
